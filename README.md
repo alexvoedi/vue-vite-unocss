@@ -1,4 +1,4 @@
-# vue-vite-windi starter template
+# vue-vite-unocss starter template
 
 Inspired by [Vitesse](https://github.com/antfu/vitesse).
 
@@ -18,7 +18,7 @@ Inspired by [Vitesse](https://github.com/antfu/vitesse).
 
 - [Icons](https://iconify.design/)
 
-- [Windi CSS](https://github.com/windicss/windicss) with [`vite-plugin-windicss`](https://github.com/antfu/vite-plugin-windicss)
+- [UnoCSS](https://github.com/unocss/unocss)
 
 - [`Components auto importing`](https://github.com/antfu/unplugin-vue-components)
 
@@ -30,4 +30,4 @@ Inspired by [Vitesse](https://github.com/antfu/vitesse).
 
 ## GitHub Template
 
-[Create a repo from this template on GitHub](https://github.com/alexvoedi/vue-vite-windi/generate).
+[Create a repo from this template on GitHub](https://github.com/alexvoedi/vue-vite-unocss/generate).
