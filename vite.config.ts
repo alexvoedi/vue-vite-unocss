@@ -10,6 +10,8 @@ import PurgeIcons from "vite-plugin-purge-icons";
 import Unocss from "unocss/vite";
 import presetWind from "@unocss/preset-wind";
 import presetAttributify from "@unocss/preset-attributify";
+import transformerDirective from "@unocss/transformer-directives";
+import transformerVariantGroup from "@unocss/transformer-variant-group";
 
 export default defineConfig({
   resolve: {
