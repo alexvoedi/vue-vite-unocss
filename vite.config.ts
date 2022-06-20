@@ -57,6 +57,7 @@ export default defineConfig({
       presets: [presetWind(), presetAttributify()],
       theme: {},
       rules: [],
+      transformers: [transformerDirective(), transformerVariantGroup()],
     }),
 
     VueI18n({
