@@ -19,8 +19,7 @@
     "plugin:vue/vue3-essential",
     "@vue/typescript/recommended",
     "@vue/eslint-config-typescript/recommended",
-    "@vue/eslint-config-prettier",
-    "./.eslintrc-auto-import.json"
+    "@vue/eslint-config-prettier"
   ],
   "globals": {
     "defineProps": "readonly",
