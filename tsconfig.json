@@ -9,14 +9,15 @@
     ],
     "strict": true,
     "esModuleInterop": true,
+    "skipLibCheck": true,
+    "jsx": "preserve",
     "moduleResolution": "node",
     "resolveJsonModule": true,
+    "strictNullChecks": true,
     "sourceMap": true,
-    "jsx": "preserve",
     "types": [
-      "unplugin-icons/types/vue",
       "vite/client",
-      "node"
+      "vite-plugin-pages/client"
     ],
     "paths": {
       "@/*": [
@@ -24,13 +25,6 @@
       ]
     }
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.d.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "./auto-imports.d.ts"
-  ],
   "exclude": [
     "dist",
     "node_modules",
