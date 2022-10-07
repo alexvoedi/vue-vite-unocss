@@ -14,9 +14,10 @@ export default defineConfig({
     presetAttributify(),
     presetIcons({
       warn: true,
+      prefix: "ico-",
       extraProperties: {
-        'display': 'inline-block',
-        'vertical-align': 'middle',
+        display: "inline-block",
+        "vertical-align": "middle",
       },
     }),
     presetTypography(),

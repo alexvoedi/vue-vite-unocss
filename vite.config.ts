@@ -5,7 +5,8 @@ import VueI18n from "@intlify/vite-plugin-vue-i18n";
 import Components from "unplugin-vue-components/vite";
 import AutoImport from "unplugin-auto-import/vite";
 import Unocss from "unocss/vite";
-import Inspect from 'vite-plugin-inspect'
+import Inspect from "vite-plugin-inspect";
+import { VueUseComponentsResolver } from "unplugin-vue-components/resolvers";
 
 export default defineConfig({
   resolve: {
@@ -18,12 +19,13 @@ export default defineConfig({
 
     // https://github.com/antfu/unplugin-vue-components
     Components({
-      dts: "src/components.d.ts",
+      dts: "src/types/components.d.ts",
       deep: true,
       directoryAsNamespace: true,
       include: [/\.vue$/, /\.vue\?vue/],
       globalNamespaces: ["components"],
       dirs: ["src/components", "src/layouts"],
+      resolvers: [VueUseComponentsResolver()],
     }),
 
     // https://github.com/antfu/unplugin-auto-import
@@ -35,9 +37,11 @@ export default defineConfig({
         "@vueuse/head",
         "@vueuse/core",
       ],
-      dts: "src/auto-import.d.ts",
-      dirs: ["src/composables", "src/store"],
+      dts: "src/types/auto-import.d.ts",
       vueTemplate: true,
+      eslintrc: {
+        enabled: true,
+      },
     }),
 
     // https://github.com/antfu/unocss
@@ -56,5 +60,5 @@ export default defineConfig({
 
   server: {
     host: true,
-  }
+  },
 });

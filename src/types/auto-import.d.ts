@@ -108,7 +108,6 @@ declare global {
   const useAsyncState: typeof import('@vueuse/core')['useAsyncState']
   const useAttrs: typeof import('vue')['useAttrs']
   const useBase64: typeof import('@vueuse/core')['useBase64']
-  const useBaseStore: typeof import('./store/base')['useBaseStore']
   const useBattery: typeof import('@vueuse/core')['useBattery']
   const useBluetooth: typeof import('@vueuse/core')['useBluetooth']
   const useBreakpoints: typeof import('@vueuse/core')['useBreakpoints']
@@ -373,7 +372,6 @@ declare module '@vue/runtime-core' {
     readonly useAsyncState: UnwrapRef<typeof import('@vueuse/core')['useAsyncState']>
     readonly useAttrs: UnwrapRef<typeof import('vue')['useAttrs']>
     readonly useBase64: UnwrapRef<typeof import('@vueuse/core')['useBase64']>
-    readonly useBaseStore: UnwrapRef<typeof import('./store/base')['useBaseStore']>
     readonly useBattery: UnwrapRef<typeof import('@vueuse/core')['useBattery']>
     readonly useBluetooth: UnwrapRef<typeof import('@vueuse/core')['useBluetooth']>
     readonly useBreakpoints: UnwrapRef<typeof import('@vueuse/core')['useBreakpoints']>
