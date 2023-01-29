@@ -6,7 +6,7 @@ import {
   presetUno,
   transformerDirectives,
   transformerVariantGroup,
-} from "unocss";
+} from 'unocss'
 
 export default defineConfig({
   presets: [
@@ -14,13 +14,13 @@ export default defineConfig({
     presetAttributify(),
     presetIcons({
       warn: true,
-      prefix: "ico-",
+      prefix: 'ico-',
       extraProperties: {
-        display: "inline-block",
-        "vertical-align": "middle",
+        'display': 'inline-block',
+        'vertical-align': 'middle',
       },
     }),
     presetTypography(),
   ],
   transformers: [transformerDirectives(), transformerVariantGroup()],
-});
+})

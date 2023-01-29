@@ -4,7 +4,9 @@
   "i18n-ally.sortKeys": true,
   "typescript.tsdk": "node_modules/typescript/lib",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
+    "source.fixAll.eslint": true
   },
+  "prettier.enable": false,
+  "editor.formatOnSave": false,
   "i18n-ally.sourceLanguage": "en"
 }

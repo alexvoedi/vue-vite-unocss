@@ -1,17 +1,17 @@
-import { defineConfig } from "vite";
-import path from "path";
-import Vue from "@vitejs/plugin-vue";
-import VueI18n from "@intlify/unplugin-vue-i18n/vite";
-import Components from "unplugin-vue-components/vite";
-import AutoImport from "unplugin-auto-import/vite";
-import Unocss from "unocss/vite";
-import Inspect from "vite-plugin-inspect";
-import { VueUseComponentsResolver } from "unplugin-vue-components/resolvers";
+import path from 'path'
+import { defineConfig } from 'vite'
+import Vue from '@vitejs/plugin-vue'
+import VueI18n from '@intlify/unplugin-vue-i18n/vite'
+import Components from 'unplugin-vue-components/vite'
+import AutoImport from 'unplugin-auto-import/vite'
+import Unocss from 'unocss/vite'
+import Inspect from 'vite-plugin-inspect'
+import { VueUseComponentsResolver } from 'unplugin-vue-components/resolvers'
 
 export default defineConfig({
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "src"),
+      '@': path.resolve(__dirname, 'src'),
     },
   },
   plugins: [
@@ -19,25 +19,25 @@ export default defineConfig({
 
     // https://github.com/antfu/unplugin-vue-components
     Components({
-      dts: "src/types/components.d.ts",
+      dts: 'src/types/components.d.ts',
       deep: true,
       directoryAsNamespace: true,
       include: [/\.vue$/, /\.vue\?vue/],
-      globalNamespaces: ["components"],
-      dirs: ["src/components", "src/layouts"],
+      globalNamespaces: ['components'],
+      dirs: ['src/components', 'src/layouts'],
       resolvers: [VueUseComponentsResolver()],
     }),
 
     // https://github.com/antfu/unplugin-auto-import
     AutoImport({
       imports: [
-        "vue",
-        "vue-router",
-        "vue-i18n",
-        "@vueuse/head",
-        "@vueuse/core",
+        'vue',
+        'vue-router',
+        'vue-i18n',
+        '@vueuse/head',
+        '@vueuse/core',
       ],
-      dts: "src/types/auto-import.d.ts",
+      dts: 'src/types/auto-import.d.ts',
       vueTemplate: true,
       eslintrc: {
         enabled: true,
@@ -51,7 +51,7 @@ export default defineConfig({
     VueI18n({
       runtimeOnly: true,
       compositionOnly: true,
-      include: [path.resolve(__dirname, "i18n/**")],
+      include: [path.resolve(__dirname, 'i18n/**')],
     }),
 
     // https://github.com/antfu/vite-plugin-inspect
@@ -61,4 +61,4 @@ export default defineConfig({
   server: {
     host: true,
   },
-});
+})

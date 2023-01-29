@@ -28,10 +28,10 @@
     "src/**/*.ts",
     "src/**/*.d.ts",
     "src/**/*.tsx",
-    "src/**/*.vue",
+    "src/**/*.vue"
   ],
   "exclude": [
     "dist",
-    "node_modules",
+    "node_modules"
   ]
 }
