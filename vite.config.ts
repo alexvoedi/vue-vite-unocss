@@ -51,7 +51,7 @@ export default defineConfig({
     VueI18n({
       runtimeOnly: true,
       compositionOnly: true,
-      include: [path.resolve(__dirname, 'i18n/**')],
+      include: [path.resolve(__dirname, 'lang/**')],
     }),
 
     // https://github.com/antfu/vite-plugin-inspect
