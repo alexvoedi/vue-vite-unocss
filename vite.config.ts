@@ -23,7 +23,7 @@ export default defineConfig({
       deep: true,
       directoryAsNamespace: true,
       include: [/\.vue$/, /\.vue\?vue/],
-      globalNamespaces: ['components'],
+      globalNamespaces: ['components', 'layouts'],
       dirs: ['src/components', 'src/layouts'],
       resolvers: [VueUseComponentsResolver()],
     }),
