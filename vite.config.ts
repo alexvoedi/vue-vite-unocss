@@ -1,4 +1,4 @@
-import path from 'path'
+import path from 'node:path'
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import VueI18n from '@intlify/unplugin-vue-i18n/vite'
