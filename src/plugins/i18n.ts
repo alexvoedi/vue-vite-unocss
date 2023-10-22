@@ -1,6 +1,6 @@
 import { createI18n } from 'vue-i18n'
 
-const loadTranslations = () => {
+function loadTranslations() {
   const files = import.meta.glob<{ default: any }>('../../lang/*.json', {
     eager: true,
   })

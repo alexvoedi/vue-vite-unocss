@@ -4,8 +4,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    component: () => import('./pages/index.vue')
-  }
+    component: () => import('./pages/index.vue'),
+  },
 ]
 
 const router = createRouter({
