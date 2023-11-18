@@ -1,7 +1,7 @@
 import 'vue-router'
 
-export {}
+export { }
 
 declare module 'vue-router' {
-  interface RouteMeta {}
+  interface RouteMeta { }
 }
