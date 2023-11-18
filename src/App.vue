@@ -4,4 +4,5 @@
   <router-view />
 </template>
 
-<style lang="postcss"></style>
+<style lang="postcss">
+</style>
