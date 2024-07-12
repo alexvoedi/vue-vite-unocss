@@ -1,10 +1,9 @@
 <script setup lang="ts">
-const { t } = useI18n()
 </script>
 
 <template>
   <div>
-    <h1>{{ t('hello') }}</h1>
+    <h1>Hello, World!</h1>
   </div>
 </template>
 

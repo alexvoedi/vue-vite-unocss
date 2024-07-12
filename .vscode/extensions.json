@@ -1,10 +1,10 @@
 {
   "recommendations": [
     "Vue.volar",
-    "lokalise.i18n-ally",
     "antfu.iconify",
     "antfu.unocss",
     "dbaeumer.vscode-eslint",
+    "antfu.goto-alias",
     "csstools.postcss"
   ]
 }

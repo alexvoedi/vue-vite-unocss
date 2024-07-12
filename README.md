@@ -10,8 +10,6 @@ Inspired by [Vitesse](https://github.com/antfu/vitesse).
 
 - [Vue Router](https://github.com/vuejs/vue-router)
 
-- [Vue I18n](https://github.com/intlify/vue-i18n-next)
-
 - [Pinia](https://github.com/vuejs/pinia)
 
 - TypeScript
