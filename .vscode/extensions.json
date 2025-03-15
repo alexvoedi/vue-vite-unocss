@@ -4,7 +4,6 @@
     "antfu.iconify",
     "antfu.unocss",
     "dbaeumer.vscode-eslint",
-    "antfu.goto-alias",
-    "csstools.postcss"
+    "antfu.goto-alias"
   ]
 }
