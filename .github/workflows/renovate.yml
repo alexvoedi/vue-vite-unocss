@@ -1,0 +1,26 @@
+name: Renovate
+
+on:
+  schedule:
+    - cron: '0 18 * * 5'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  renovate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run Renovate
+        uses: renovatebot/github-action@v46.1.4
+        env:
+          RENOVATE_REPOSITORIES: alexvoedi/vue-vite-unocss
+          RENOVATE_GIT_AUTHOR: Alexander Vödisch <voedisch.alexander@gmail.com>
+        with:
+          token: ${{ secrets.RENOVATE_TOKEN }}
+          configurationFile: renovate.json
